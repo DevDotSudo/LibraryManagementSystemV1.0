@@ -64,13 +64,13 @@ public class CICT extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        exit.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
+        exit.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         exit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 exitMouseClicked(evt);
             }
         });
-        moveFrame.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 0, -1, -1));
+        moveFrame.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 0, -1, -1));
 
         jPanel1.add(moveFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 30));
 
@@ -205,7 +205,7 @@ public class CICT extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 500));
 
-        setSize(new java.awt.Dimension(879, 491));
+        setSize(new java.awt.Dimension(890, 491));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -378,24 +378,21 @@ public class CICT extends javax.swing.JFrame {
     }//GEN-LAST:event_booksListMouseClicked
 
     private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBtnActionPerformed
-        String book_id = bookIDFld.getText();
-        String book_title = bookTitleFld.getText();
-        String book_author = bookAuthorFld.getText();
-        String book_page = bookPagesFld.getText();
+        String book_id = bookIDFld.getText().trim();
         int confirm;
         
         try{
-            if(book_id.isEmpty() || book_title.isEmpty() || book_author.isEmpty() || book_page.isEmpty()) {
+            if(book_id.isEmpty()) {
                 JOptionPane.showMessageDialog(null, "There is an empty fields", "Message", JOptionPane.ERROR_MESSAGE);
             }
             else {
-                long delete = Long.parseLong(bookIDFld.getText());
+                String delete = book_id;
 
                 confirm = JOptionPane.showConfirmDialog(null, "Delete this book?", "Message", JOptionPane.OK_CANCEL_OPTION);
 
                 if(confirm == JOptionPane.OK_OPTION) {
                     db.ps = db.con.prepareStatement("DELETE FROM Cict_Books WHERE Book_ID = ?");
-                    db.ps.setLong(1,delete);
+                    db.ps.setString(1,delete);
                 }
                 else {
                     clearFlds();
@@ -414,9 +411,6 @@ public class CICT extends javax.swing.JFrame {
                 }
                 showBooks();
             }
-        }
-        catch(NumberFormatException i) {
-            JOptionPane.showMessageDialog(null, "Invalid input for book pages", "Message", JOptionPane.ERROR_MESSAGE);
         }
         catch(Exception e)
         {

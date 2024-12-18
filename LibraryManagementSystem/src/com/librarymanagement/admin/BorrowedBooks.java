@@ -99,7 +99,7 @@ public class BorrowedBooks extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new AbsoluteLayout());
 
-        exit.setIcon(new ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
+        exit.setIcon(new ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         exit.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent evt) {
                 exitMouseClicked(evt);

@@ -81,12 +81,12 @@ public class StudentLogin extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         forgotPass = new javax.swing.JLabel();
-        backBtn = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         moveFrame = new javax.swing.JLabel();
         kGradientPanel1 = new keeptoo.KGradientPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        backBtn = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Library Management");
@@ -100,7 +100,6 @@ public class StudentLogin extends javax.swing.JFrame {
 
         exitBtn.setFont(new java.awt.Font("Roboto Mono", 1, 18)); // NOI18N
         exitBtn.setForeground(new java.awt.Color(27, 152, 239));
-        exitBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
         exitBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         exitBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -119,8 +118,8 @@ public class StudentLogin extends javax.swing.JFrame {
         jLabel6.setText("LOGIN");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/student.png")); // NOI18N
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 140, 110));
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\student.png")); // NOI18N
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 140, 110));
 
         jLabel7.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(23, 107, 135));
@@ -132,16 +131,16 @@ public class StudentLogin extends javax.swing.JFrame {
         jLabel10.setText("Password");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, -1));
 
-        showPass.setBackground(transparent);
+        showPass.setBackground(new java.awt.Color(255, 255, 255));
         showPass.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         showPass.setForeground(new java.awt.Color(23, 107, 135));
-        showPass.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/hide.png")); // NOI18N
+        showPass.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\hide.png")); // NOI18N
         showPass.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 showPassMouseClicked(evt);
             }
         });
-        jPanel2.add(showPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, 20, 30));
+        jPanel2.add(showPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, 20, 20));
 
         passFld.setBackground(new java.awt.Color(255, 255, 255));
         passFld.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 12)); // NOI18N
@@ -178,11 +177,11 @@ public class StudentLogin extends javax.swing.JFrame {
         emptyPass.setForeground(new java.awt.Color(255, 0, 0));
         jPanel2.add(emptyPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 140, 20));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/programmer.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\programmer.png")); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(23, 107, 135)));
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 40, 30));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/password.png")); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\password.png")); // NOI18N
         jLabel9.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(23, 107, 135)));
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 40, 30));
 
@@ -198,18 +197,7 @@ public class StudentLogin extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 390, 440));
 
-        backBtn.setFont(new java.awt.Font("Times New Roman Cyr", 1, 14)); // NOI18N
-        backBtn.setForeground(new java.awt.Color(254, 254, 254));
-        backBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/left-arrow.png")); // NOI18N
-        backBtn.setText("Back");
-        backBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                backBtnMouseClicked(evt);
-            }
-        });
-        jPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 404, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/Library-bro.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\Library-bro.png")); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 250, 180));
 
         moveFrame.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -238,6 +226,17 @@ public class StudentLogin extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(254, 254, 254));
         jLabel3.setText("Management");
         kGradientPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
+
+        backBtn.setFont(new java.awt.Font("Times New Roman Cyr", 1, 14)); // NOI18N
+        backBtn.setForeground(new java.awt.Color(254, 254, 254));
+        backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\left-arrow.png")); // NOI18N
+        backBtn.setText("Back");
+        backBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                backBtnMouseClicked(evt);
+            }
+        });
+        kGradientPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, -1, -1));
 
         jPanel1.add(kGradientPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 440));
 

@@ -47,8 +47,7 @@ public class ShowStudents extends javax.swing.JFrame {
         }
     }
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents() {//GEN-BEGIN:initComponents
 
         jPanel1 = new javax.swing.JPanel();
         moveFrame = new javax.swing.JPanel();
@@ -81,15 +80,15 @@ public class ShowStudents extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        exit.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
+        exit.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         exit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 exitMouseClicked(evt);
             }
         });
-        moveFrame.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 0, -1, -1));
+        moveFrame.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 0, -1, -1));
 
-        jPanel1.add(moveFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 1010, 30));
+        jPanel1.add(moveFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 30));
 
         jPanel2.setBackground(new java.awt.Color(255, 238, 217));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createMatteBorder(2, 0, 2, 0, new java.awt.Color(23, 107, 135)), "List of Students", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Poppins SemiBold", 1, 24), new java.awt.Color(23, 107, 135))); // NOI18N
@@ -156,8 +155,9 @@ public class ShowStudents extends javax.swing.JFrame {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 79, 950, 330));
 
+        searchFld.setBackground(new java.awt.Color(255, 238, 217));
         searchFld.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        searchFld.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(23, 107, 135)), "Search Students", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(23, 107, 135))); // NOI18N
+        searchFld.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(23, 107, 135)), "Search Students", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(23, 107, 135))); // NOI18N
         searchFld.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchFldActionPerformed(evt);
@@ -176,7 +176,7 @@ public class ShowStudents extends javax.swing.JFrame {
 
         setSize(new java.awt.Dimension(1002, 503));
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }//GEN-END:initComponents
 
     private void moveFrameMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_moveFrameMousePressed
         xMouse = evt.getX();

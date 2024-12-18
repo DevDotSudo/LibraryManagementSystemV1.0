@@ -1,7 +1,7 @@
 package com.librarymanagement.student;
 
 import com.librarymanagement.admin.DBConnection;
-import static com.librarymanagement.student.CM.db;
+import com.librarymanagement.admin.TimeDisplay;
 import java.sql.Statement;
 import java.util.Vector;
 import javax.swing.JOptionPane;
@@ -12,12 +12,14 @@ import javax.swing.table.TableRowSorter;
 
 public class CIT extends javax.swing.JFrame {
     static DBConnection db;
+    static TimeDisplay time;
     int xMouse;
     int yMouse;
     
     public CIT() {
         initComponents();
         db = new DBConnection();
+        time = new TimeDisplay();
         db.connect();
         showBooks();
     }
@@ -87,7 +89,7 @@ public class CIT extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        exit.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit-white.png")); // NOI18N
+        exit.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         exit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 exitMouseClicked(evt);
@@ -197,7 +199,7 @@ public class CIT extends javax.swing.JFrame {
             int check = db.ps.executeUpdate();
             
             if(check == 1) {
-                db.ps = db.con.prepareStatement("INSERT INTO BorrowedBooks_Admin(Book_ID, Book_Title, Book_Author, Book_Pages, Student_FullName, Student_ID, CourseAndYear) VALUES(?,?,?,?,?,?,?)");
+                db.ps = db.con.prepareStatement("INSERT INTO BorrowedBooks_Admin(Book_ID, Book_Title, Book_Author, Book_Pages, Student_FullName, Student_ID, CourseAndYear, Time_Borrowed) VALUES(?,?,?,?,?,?,?,?)");
                 db.ps.setString(1, book_id);
                 db.ps.setString(2, book_title);
                 db.ps.setString(3, book_author);
@@ -205,7 +207,8 @@ public class CIT extends javax.swing.JFrame {
                 db.ps.setString(5, fullname);
                 db.ps.setString(6, studID);
                 db.ps.setString(7, course_year);
-                
+                db.ps.setString(8, time.getDateTime());
+
                 int check2 = db.ps.executeUpdate();
                 
                                 

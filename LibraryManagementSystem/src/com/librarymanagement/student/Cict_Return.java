@@ -117,7 +117,7 @@ public class Cict_Return extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new AbsoluteLayout());
 
-        disposeLbl.setIcon(new ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
+        disposeLbl.setIcon(new ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         disposeLbl.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent evt) {
                 disposeLblMouseClicked(evt);
@@ -184,7 +184,7 @@ public class Cict_Return extends javax.swing.JFrame {
                     int check2 = db.ps.executeUpdate();
 
                     if(check2 == 1){
-                        db.ps = db.con.prepareStatement("INSERT INTO ReturnedBooks_Admin (Book_ID,Book_Title,Book_Author,Book_Pages,Student_FullName,Student_ID,CourseAndYear, Time_Returned) VALUES(?,?,?,?,?,?,?,?)");
+                            db.ps = db.con.prepareStatement("INSERT INTO ReturnedBooks_Admin (Book_ID,Book_Title,Book_Author,Book_Pages,Student_FullName,Student_ID,CourseAndYear, Time_Returned) VALUES(?,?,?,?,?,?,?,?)");
                                 db.ps.setString(1, idR);
                                 db.ps.setString(2, titleR);
                                 db.ps.setString(3, authorsR);

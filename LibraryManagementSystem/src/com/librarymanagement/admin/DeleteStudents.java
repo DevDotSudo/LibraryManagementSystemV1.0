@@ -58,7 +58,7 @@ public class DeleteStudents extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        exit.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
+        exit.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         exit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 exitMouseClicked(evt);
@@ -92,15 +92,13 @@ public class DeleteStudents extends javax.swing.JFrame {
         jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 730, 240));
 
         jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 146, 750, 280));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/boy.png")); // NOI18N
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
 
         idDelete.setBackground(new java.awt.Color(255, 238, 217));
         idDelete.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
         idDelete.setForeground(new java.awt.Color(11, 36, 71));
         idDelete.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        idDelete.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(23, 107, 135), 1, true), "Enter Student ID", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(23, 107, 135))); // NOI18N
+        idDelete.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(23, 107, 135), 1, true), "Enter Student ID", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(23, 107, 135))); // NOI18N
         jPanel3.add(idDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, 220, 50));
 
         deleteBtn.setBackground(new java.awt.Color(23, 107, 135));

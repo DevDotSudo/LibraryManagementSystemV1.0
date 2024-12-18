@@ -11,7 +11,7 @@ public class DBConnection {
     public void connect() {
         try {
             Class.forName(DRIVE);
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/LibraryManagement?useSSL=false","sudo","jenn06");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/LibraryManagement?useSSL=false","SudoDotDev","101802");
             
             if(con != null) {
                 System.out.println("Connected Successfully!");

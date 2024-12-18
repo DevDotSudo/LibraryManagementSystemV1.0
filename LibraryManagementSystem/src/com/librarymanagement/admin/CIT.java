@@ -67,7 +67,7 @@ public class CIT extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        exit.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
+        exit.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         exit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 exitMouseClicked(evt);
@@ -313,24 +313,21 @@ public class CIT extends javax.swing.JFrame {
     }//GEN-LAST:event_searchFldKeyReleased
 
     private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBtnActionPerformed
-        String book_id = bookIDFld.getText();
-        String book_title = bookTitleFld.getText();
-        String book_author = bookAuthorFld.getText();
-        String book_page = bookPagesFld.getText();
+        String book_id = bookIDFld.getText().trim();
         int confirm;
         
         try{
-            if(book_id.isEmpty() || book_title.isEmpty() || book_author.isEmpty() || book_page.isEmpty()) {
+            if(book_id.isEmpty()) {
                 JOptionPane.showMessageDialog(null, "There is an empty fields", "Message", JOptionPane.ERROR_MESSAGE);
             }
             else {
-                long delete = Long.parseLong(bookIDFld.getText());
-                
+                String delete = book_id;
+
                 confirm = JOptionPane.showConfirmDialog(null, "Delete this book?", "Message", JOptionPane.OK_CANCEL_OPTION);
 
                 if(confirm == JOptionPane.OK_OPTION) {
                     db.ps = db.con.prepareStatement("DELETE FROM Cit_Books WHERE Book_ID = ?");
-                    db.ps.setLong(1,delete);
+                    db.ps.setString(1,delete);
                 }
                 else {
                     clearFlds();
@@ -339,19 +336,16 @@ public class CIT extends javax.swing.JFrame {
                     int del = db.ps.executeUpdate();
                     if(del == 1)
                 {
-                    JOptionPane.showMessageDialog(null, "Successfully deleted!","Message",JOptionPane.PLAIN_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Successfully deleted!!","Message",JOptionPane.PLAIN_MESSAGE);
                     clearFlds();
 
                 }
                 else
                 {
-                  JOptionPane.showMessageDialog(null,"Book not deleted!","Message",JOptionPane.ERROR_MESSAGE);
+                  JOptionPane.showMessageDialog(null,"Not deleted!!","Message",JOptionPane.ERROR_MESSAGE);
                 }
                 showBooks();
             }
-        }
-        catch(NumberFormatException i) {
-            JOptionPane.showMessageDialog(null, "Invalid input for book pages", "Message", JOptionPane.ERROR_MESSAGE);
         }
         catch(Exception e)
         {

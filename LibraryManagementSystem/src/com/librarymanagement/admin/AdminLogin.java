@@ -29,10 +29,10 @@ public class AdminLogin extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         exit = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        backBtn = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         kGradientPanel1 = new keeptoo.KGradientPanel();
         jLabel2 = new javax.swing.JLabel();
+        backBtn = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -59,7 +59,7 @@ public class AdminLogin extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(23, 107, 135));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        exit.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit-white.png")); // NOI18N
+        exit.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         exit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         exit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -74,19 +74,7 @@ public class AdminLogin extends javax.swing.JFrame {
         jLabel3.setText("Management");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
 
-        backBtn.setBackground(new java.awt.Color(228, 228, 228));
-        backBtn.setFont(new java.awt.Font("Times New Roman Cyr", 1, 14)); // NOI18N
-        backBtn.setForeground(new java.awt.Color(255, 255, 255));
-        backBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/left-arrow.png")); // NOI18N
-        backBtn.setText("Back");
-        backBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                backBtnMouseClicked(evt);
-            }
-        });
-        jPanel2.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/Library-bro.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\Library-bro.png")); // NOI18N
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
 
         kGradientPanel1.setkEndColor(new java.awt.Color(23, 107, 135));
@@ -98,6 +86,18 @@ public class AdminLogin extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Library");
         kGradientPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, -1, -1));
+
+        backBtn.setBackground(new java.awt.Color(228, 228, 228));
+        backBtn.setFont(new java.awt.Font("Times New Roman Cyr", 1, 14)); // NOI18N
+        backBtn.setForeground(new java.awt.Color(255, 255, 255));
+        backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\left-arrow.png")); // NOI18N
+        backBtn.setText("Back");
+        backBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                backBtnMouseClicked(evt);
+            }
+        });
+        kGradientPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, -1, -1));
 
         jPanel2.add(kGradientPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 440));
 
@@ -114,7 +114,7 @@ public class AdminLogin extends javax.swing.JFrame {
         jLabel7.setText("Login");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/4167276_18771_1_-removebg-preview.png")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\4167276_18771_1_-removebg-preview.png")); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 0, 14)); // NOI18N
@@ -133,17 +133,16 @@ public class AdminLogin extends javax.swing.JFrame {
         userFld.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(23, 107, 135)));
         jPanel1.add(userFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 210, 30));
 
-        showPass.setBackground(transparent);
+        showPass.setBackground(new java.awt.Color(255, 255, 255));
         showPass.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 0, 12)); // NOI18N
         showPass.setForeground(new java.awt.Color(23, 107, 135));
-        showPass.setDisabledIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
-        showPass.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/hide.png")); // NOI18N
+        showPass.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\hide.png")); // NOI18N
         showPass.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 showPassMouseClicked(evt);
             }
         });
-        jPanel1.add(showPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 20, 30));
+        jPanel1.add(showPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 20, -1));
 
         passFld.setBackground(new java.awt.Color(255, 255, 255));
         passFld.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 12)); // NOI18N
@@ -185,11 +184,11 @@ public class AdminLogin extends javax.swing.JFrame {
         emptyPass.setForeground(new java.awt.Color(255, 0, 0));
         jPanel1.add(emptyPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 120, 20));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/programmer.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\programmer.png")); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(23, 107, 135)));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 40, 30));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/password.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\password.png")); // NOI18N
         jLabel4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(23, 107, 135)));
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 40, 30));
 
@@ -253,10 +252,10 @@ public class AdminLogin extends javax.swing.JFrame {
     private void showPassMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showPassMouseClicked
         if(showPass.isSelected()) {
             passFld.setEchoChar((char)0);
-            showPass.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/show.png"));
+            showPass.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\show.png"));
         } else {
            passFld.setEchoChar('*');
-           showPass.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/hide.png"));
+           showPass.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\hide.png"));
         }
     }//GEN-LAST:event_showPassMouseClicked
         

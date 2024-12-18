@@ -58,7 +58,7 @@ public class StudentChangePassword extends javax.swing.JFrame {
         backBtn.setFont(new Font("Poppins Medium", 0, 12)); // NOI18N
         backBtn.setForeground(new Color(255, 238, 217));
         backBtn.setHorizontalAlignment(SwingConstants.CENTER);
-        backBtn.setIcon(new ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/left-arrow.png")); // NOI18N
+        backBtn.setIcon(new ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\left-arrow.png")); // NOI18N
         backBtn.setText("Back to login");
         backBtn.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent evt) {

@@ -30,8 +30,7 @@ public class SplashScreen extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents() {//GEN-BEGIN:initComponents
 
         kGradientPanel1 = new KGradientPanel();
         jLabel1 = new JLabel();
@@ -60,7 +59,7 @@ public class SplashScreen extends javax.swing.JFrame {
         jLabel2.setFont(new Font("Poppins Black", 1, 36)); // NOI18N
         jLabel2.setForeground(new Color(255, 255, 255));
         jLabel2.setText("MANAGEMENT");
-        kGradientPanel1.add(jLabel2, new AbsoluteConstraints(250, 300, -1, 50));
+        kGradientPanel1.add(jLabel2, new AbsoluteConstraints(260, 300, -1, 50));
 
         jLabel3.setFont(new Font("Poppins Black", 1, 24)); // NOI18N
         jLabel3.setForeground(new Color(255, 255, 255));
@@ -84,7 +83,7 @@ public class SplashScreen extends javax.swing.JFrame {
         percentageLbl.setText("0%");
         kGradientPanel1.add(percentageLbl, new AbsoluteConstraints(690, 420, 50, -1));
 
-        jLabel4.setIcon(new ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/library_loading.png")); // NOI18N
+        jLabel4.setIcon(new ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\library_loading.png")); // NOI18N
         kGradientPanel1.add(jLabel4, new AbsoluteConstraints(160, 50, -1, 240));
 
         moveFrame.setBackground(transparent);
@@ -104,7 +103,7 @@ public class SplashScreen extends javax.swing.JFrame {
 
         setSize(new Dimension(769, 485));
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }//GEN-END:initComponents
 
     private void moveFrameMousePressed(MouseEvent evt) {//GEN-FIRST:event_moveFrameMousePressed
         xMouse = evt.getX();

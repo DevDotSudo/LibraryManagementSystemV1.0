@@ -1,6 +1,7 @@
 package com.librarymanagement.student;
 
 import com.librarymanagement.admin.DBConnection;
+import com.librarymanagement.admin.TimeDisplay;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -25,12 +26,14 @@ import org.netbeans.lib.awtextra.AbsoluteLayout;
 
 public class Cit_Return extends javax.swing.JFrame {
     static DBConnection db;
+    static TimeDisplay time;
     int xMouse;
     int yMouse;
     
     public Cit_Return() {
         initComponents();
         db = new DBConnection();
+        time = new TimeDisplay();
         db.connect();
     }
 
@@ -74,7 +77,7 @@ public class Cit_Return extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new AbsoluteLayout());
 
-        exit.setIcon(new ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
+        exit.setIcon(new ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         exit.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent evt) {
                 exitMouseClicked(evt);
@@ -180,7 +183,7 @@ public class Cit_Return extends javax.swing.JFrame {
                     int check2 = db.ps.executeUpdate();
 
                     if(check2 == 1){
-                        db.ps = db.con.prepareStatement("INSERT INTO ReturnedBooks_Admin (Book_ID,Book_Title,Book_Author,Book_Pages,Student_FullName,Student_ID,CourseAndYear) VALUES(?,?,?,?,?,?,?)");
+                        db.ps = db.con.prepareStatement("INSERT INTO ReturnedBooks_Admin (Book_ID,Book_Title,Book_Author,Book_Pages,Student_FullName,Student_ID,CourseAndYear, Time_Returned) VALUES(?,?,?,?,?,?,?,?)");
                         db.ps.setString(1, idR);
                         db.ps.setString(2, titleR);
                         db.ps.setString(3, authorsR);
@@ -188,7 +191,8 @@ public class Cit_Return extends javax.swing.JFrame {
                         db.ps.setString(5, fullR);
                         db.ps.setString(6, idNum);
                         db.ps.setString(7, course_year);
-
+                        db.ps.setString(8, time.getDateTime());
+                        
                         int check3 = db.ps.executeUpdate();
 
                         if(check3 == 1){

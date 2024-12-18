@@ -23,21 +23,20 @@ public class AdminMenu extends javax.swing.JFrame {
     }
     @SuppressWarnings("unchecked")
     
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents() {//GEN-BEGIN:initComponents
 
         jPanel1 = new javax.swing.JPanel();
-        exit = new javax.swing.JLabel();
         moveFrame = new javax.swing.JPanel();
+        exit = new javax.swing.JLabel();
         line = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        addStudentsBtn = new javax.swing.JButton();
         showStudentsBtn = new javax.swing.JButton();
         updateStudentsBtn = new javax.swing.JButton();
         deleteStudentsBtn = new javax.swing.JButton();
+        addStudentsBtn = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         cictBtn = new javax.swing.JButton();
         coedBtn = new javax.swing.JButton();
@@ -58,15 +57,8 @@ public class AdminMenu extends javax.swing.JFrame {
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 238, 217));
+        jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(23, 107, 135)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        exit.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
-        exit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                exitMouseClicked(evt);
-            }
-        });
-        jPanel1.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 0, -1, -1));
 
         moveFrame.setBackground(new java.awt.Color(23, 107, 135));
         moveFrame.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -82,12 +74,21 @@ public class AdminMenu extends javax.swing.JFrame {
             }
         });
         moveFrame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(moveFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 30));
+
+        exit.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
+        exit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                exitMouseClicked(evt);
+            }
+        });
+        moveFrame.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 0, -1, -1));
+
+        jPanel1.add(moveFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 30));
 
         line.setBackground(new java.awt.Color(57, 167, 255));
         line.setForeground(new java.awt.Color(255, 238, 217));
         line.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 3, 0, new java.awt.Color(57, 167, 255)));
-        jPanel1.add(line, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 880, 10));
+        jPanel1.add(line, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1190, 10));
 
         jPanel4.setBackground(new java.awt.Color(23, 107, 135));
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -102,26 +103,14 @@ public class AdminMenu extends javax.swing.JFrame {
         jLabel1.setText("CHOOSE A TASK");
         jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 150, 20));
 
-        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 240, 40));
+        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 0, 240, 40));
 
         jPanel3.setBackground(transparent);
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 238, 217), 2), "Students", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Poppins Black", 0, 18), new java.awt.Color(255, 238, 217))); // NOI18N
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        addStudentsBtn.setBackground(transparent);
-        addStudentsBtn.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        addStudentsBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/addStud.png")); // NOI18N
-        addStudentsBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "Add Student", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
-        addStudentsBtn.setFocusable(false);
-        addStudentsBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addStudentsBtnActionPerformed(evt);
-            }
-        });
-        jPanel3.add(addStudentsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 140, 110));
-
-        showStudentsBtn.setBackground(transparent);
-        showStudentsBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/phone-book.png")); // NOI18N
+        showStudentsBtn.setBackground(new java.awt.Color(23, 107, 135));
+        showStudentsBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\phone-book.png")); // NOI18N
         showStudentsBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "Show Students", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
         showStudentsBtn.setFocusable(false);
         showStudentsBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -131,9 +120,9 @@ public class AdminMenu extends javax.swing.JFrame {
         });
         jPanel3.add(showStudentsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 140, 110));
 
-        updateStudentsBtn.setBackground(transparent);
+        updateStudentsBtn.setBackground(new java.awt.Color(23, 107, 135));
         updateStudentsBtn.setForeground(new java.awt.Color(255, 238, 217));
-        updateStudentsBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/update.png")); // NOI18N
+        updateStudentsBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\update.png")); // NOI18N
         updateStudentsBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "Update Students", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
         updateStudentsBtn.setFocusable(false);
         updateStudentsBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -143,8 +132,8 @@ public class AdminMenu extends javax.swing.JFrame {
         });
         jPanel3.add(updateStudentsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 140, 100));
 
-        deleteStudentsBtn.setBackground(transparent);
-        deleteStudentsBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/icons8-delete-48.png")); // NOI18N
+        deleteStudentsBtn.setBackground(new java.awt.Color(23, 107, 135));
+        deleteStudentsBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\icons8-delete-48.png")); // NOI18N
         deleteStudentsBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "Delete Students", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
         deleteStudentsBtn.setFocusable(false);
         deleteStudentsBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -154,14 +143,27 @@ public class AdminMenu extends javax.swing.JFrame {
         });
         jPanel3.add(deleteStudentsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, 140, 100));
 
-        jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 390, 290));
+        addStudentsBtn.setBackground(new java.awt.Color(23, 107, 135));
+        addStudentsBtn.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
+        addStudentsBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\addStud.png")); // NOI18N
+        addStudentsBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "Add Student", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
+        addStudentsBtn.setFocusPainted(false);
+        addStudentsBtn.setFocusable(false);
+        addStudentsBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addStudentsBtnActionPerformed(evt);
+            }
+        });
+        jPanel3.add(addStudentsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 140, 110));
+
+        jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 390, 290));
 
         jPanel6.setBackground(transparent);
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 238, 217), 2), "Departments", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Poppins Black", 0, 18), new java.awt.Color(255, 238, 217))); // NOI18N
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        cictBtn.setBackground(transparent);
-        cictBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/security.png")); // NOI18N
+        cictBtn.setBackground(new java.awt.Color(23, 107, 135));
+        cictBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\security.png")); // NOI18N
         cictBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "CICT", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
         cictBtn.setFocusable(false);
         cictBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -171,8 +173,8 @@ public class AdminMenu extends javax.swing.JFrame {
         });
         jPanel6.add(cictBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 140, 110));
 
-        coedBtn.setBackground(transparent);
-        coedBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/presentation.png")); // NOI18N
+        coedBtn.setBackground(new java.awt.Color(23, 107, 135));
+        coedBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\presentation.png")); // NOI18N
         coedBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "COED", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
         coedBtn.setFocusable(false);
         coedBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -182,8 +184,8 @@ public class AdminMenu extends javax.swing.JFrame {
         });
         jPanel6.add(coedBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 130, 110));
 
-        chmBtn.setBackground(transparent);
-        chmBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/managers.png")); // NOI18N
+        chmBtn.setBackground(new java.awt.Color(23, 107, 135));
+        chmBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\managers.png")); // NOI18N
         chmBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "CM", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
         chmBtn.setFocusable(false);
         chmBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -193,8 +195,8 @@ public class AdminMenu extends javax.swing.JFrame {
         });
         jPanel6.add(chmBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 171, 130, 100));
 
-        citBtn.setBackground(transparent);
-        citBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/laser-cutting-machine.png")); // NOI18N
+        citBtn.setBackground(new java.awt.Color(23, 107, 135));
+        citBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\laser-cutting-machine.png")); // NOI18N
         citBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "CIT", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
         citBtn.setFocusable(false);
         citBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -204,15 +206,16 @@ public class AdminMenu extends javax.swing.JFrame {
         });
         jPanel6.add(citBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 140, 100));
 
-        jPanel4.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 380, 290));
+        jPanel4.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 70, 380, 290));
 
         jPanel7.setBackground(transparent);
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 238, 217), 2), "Manage Books", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Poppins Black", 0, 18), new java.awt.Color(255, 238, 217))); // NOI18N
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        borrowedBtn.setBackground(transparent);
-        borrowedBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/book.png")); // NOI18N
+        borrowedBtn.setBackground(new java.awt.Color(23, 107, 135));
+        borrowedBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\library.png")); // NOI18N
         borrowedBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "Borrowed Books", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
+        borrowedBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         borrowedBtn.setFocusable(false);
         borrowedBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,8 +224,8 @@ public class AdminMenu extends javax.swing.JFrame {
         });
         jPanel7.add(borrowedBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 150, 100));
 
-        returnedBtn.setBackground(transparent);
-        returnedBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/return.png")); // NOI18N
+        returnedBtn.setBackground(new java.awt.Color(23, 107, 135));
+        returnedBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\return.png")); // NOI18N
         returnedBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(), "Returned Books", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Poppins Medium", 0, 14), new java.awt.Color(255, 238, 217))); // NOI18N
         returnedBtn.setFocusable(false);
         returnedBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -232,17 +235,18 @@ public class AdminMenu extends javax.swing.JFrame {
         });
         jPanel7.add(returnedBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, 150, 100));
 
-        jPanel4.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 400, 140));
+        jPanel4.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 400, 140));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 840, 520));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 900, 540));
 
         jPanel2.setBackground(new java.awt.Color(255, 238, 217));
+        jPanel2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(23, 107, 135)));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setBackground(new java.awt.Color(57, 167, 255));
         jLabel2.setFont(new java.awt.Font("Poppins SemiBold", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(57, 167, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/isufst.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\isufst.png")); // NOI18N
         jLabel2.setText("ISUFST");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 30));
 
@@ -253,22 +257,23 @@ public class AdminMenu extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(57, 167, 255));
-        jLabel3.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/admin.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\admin.png")); // NOI18N
         jLabel3.setText("Admin");
         jLabel3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(57, 167, 255)));
         jLabel3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, 120, 50));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, 120, 50));
 
         timeLbl.setFont(new java.awt.Font("Poppins ExtraBold", 0, 24)); // NOI18N
         timeLbl.setForeground(new java.awt.Color(57, 167, 255));
-        jPanel2.add(timeLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, -1, -1));
+        timeLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(timeLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 390, 40));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 880, 70));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1190, 70));
 
         logoutBtn.setBackground(new java.awt.Color(57, 167, 255));
         logoutBtn.setFont(new java.awt.Font("Poppins ExtraBold", 0, 18)); // NOI18N
         logoutBtn.setForeground(new java.awt.Color(57, 167, 255));
-        logoutBtn.setIcon(new javax.swing.ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/power-on.png")); // NOI18N
+        logoutBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\power-on.png")); // NOI18N
         logoutBtn.setLabelFor(logoutBtn);
         logoutBtn.setText("Logout");
         logoutBtn.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -278,13 +283,13 @@ public class AdminMenu extends javax.swing.JFrame {
                 logoutBtnMouseClicked(evt);
             }
         });
-        jPanel1.add(logoutBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 650, -1, -1));
+        jPanel1.add(logoutBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 680, -1, -1));
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
-        setSize(new java.awt.Dimension(879, 696));
+        setSize(new java.awt.Dimension(1187, 728));
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }//GEN-END:initComponents
    
     private void moveFrameMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_moveFrameMousePressed
         xMouse = evt.getX();

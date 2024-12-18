@@ -95,7 +95,7 @@
                   <Color blue="fe" green="fe" red="fe" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/admin.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\admin.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Admin"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -128,7 +128,7 @@
                   <Color blue="ef" green="98" red="1b" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\exit.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -152,7 +152,7 @@
                   <Color blue="f7" green="f7" red="fe" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/reading.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\reading.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Student"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -187,7 +187,7 @@
                   <Color blue="fe" green="fe" red="fe" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/logout.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\logout.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Exit"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -214,7 +214,7 @@
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/books.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\books.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -223,22 +223,10 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel7">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/books.png"/>
-                </Property>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="0" y="634" width="-1" height="-1"/>
-                </Constraint>
-              </Constraints>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/books.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\books.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -250,7 +238,7 @@
             <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/books.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\books.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -262,7 +250,7 @@
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/books.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\books.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -274,7 +262,7 @@
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/books.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\books.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -372,7 +360,7 @@
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/Library-bro.png"/>
+                  <Image iconType="2" name="C:\Users\Davie\Documents\NetBeansProjects\LibraryManagementSystem\images\Library-bro.png"/>
                 </Property>
               </Properties>
               <Constraints>

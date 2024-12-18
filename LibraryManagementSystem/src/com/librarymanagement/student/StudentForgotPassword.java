@@ -104,7 +104,7 @@ public class StudentForgotPassword extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new AbsoluteLayout());
 
-        dispose.setIcon(new ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit-white.png")); // NOI18N
+        dispose.setIcon(new ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         dispose.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent evt) {
                 disposeMouseClicked(evt);

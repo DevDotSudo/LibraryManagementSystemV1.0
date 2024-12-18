@@ -109,7 +109,7 @@ public class ReturnedBooks extends javax.swing.JFrame {
         });
         moveFrame.setLayout(new AbsoluteLayout());
 
-        exit.setIcon(new ImageIcon("/home/sudo_dotdev/NetBeansProjects/LibraryManagementSystem/images/exit.png")); // NOI18N
+        exit.setIcon(new ImageIcon("C:\\Users\\Davie\\Documents\\NetBeansProjects\\LibraryManagementSystem\\images\\exit.png")); // NOI18N
         exit.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent evt) {
                 exitMouseClicked(evt);
@@ -212,7 +212,7 @@ public class ReturnedBooks extends javax.swing.JFrame {
                 int check = db.ps.executeUpdate();
             
                 if(check == 1) {
-                    JOptionPane.showMessageDialog(null, "Cleared successfully");
+                    JOptionPane.showMessageDialog(null, "List Cleared.");
                     showStudents();
                 }
                 return;
